@@ -87,7 +87,7 @@ function App() {
           );
         })}
       <div>
-        Total:
+        Total Cart!:
         <strong>{cart.reduce((acc, item) => acc + item.price, 0)}</strong>
       </div>
     </div>
