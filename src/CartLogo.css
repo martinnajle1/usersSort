@@ -1,0 +1,116 @@
+.body-outside {
+  position: relative;
+  border-top: 110px solid #1e1e8a;
+  border-left: 26px solid transparent;
+  border-right: 26px solid transparent;
+  height: 0;
+  width: 150px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.body {
+    position: absolute;
+    border-top: 95px solid white;
+    border-left: 26px solid transparent;
+    border-right: 26px solid transparent;
+    height: 0;
+    width: 136px;
+    transform: translate(0%, -59%);
+ }
+.line {
+  position: absolute;
+  width: 166px;
+  height: 8px;
+  background: #1e1e8a;
+  transform: translate(0%, -55px);
+}
+.line-1{
+  position: absolute;
+  width: 178px;
+  height: 8px;
+  background: #1e1e8a;
+  transform: translate(0%, -82.5px);
+}
+.line-2 {
+  position: absolute;
+  width: 148px;
+  height: 8px;
+  background: #1e1e8a;
+  transform: translate(0%, -27.5px);
+}
+
+.tire {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  border: 8px solid #ffdd40;
+  border-radius: 50%;
+  -webkit-box-reflect: right 76px;
+  left: 24px;
+  top: 6px;
+}
+.cart {
+  transform: scale(0.2);
+  animation: move 10s infinite;
+  align-self: flex-end;
+  opacity: 0;
+}
+
+@keyframes move {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bottom {
+  position: relative;
+  width: 65px;
+  height: 8px;
+  border-radius: 5px;
+  background: #1e1e8a;
+  transform: translate(70px, -32px);
+}
+
+.side-line {
+  position: relative;
+  width: 65px;
+  height: 8px;
+  border-radius: 5px;
+  background:  #ffdd40;
+  transform: translate(-95px, -130px);
+}
+
+.side-line-2 {
+  position: relative;
+  width: 50px;
+  height: 8px;
+  border-radius: 5px;
+  background:  #ffdd40;
+  transform: translate(-70px, -96px);
+}
+
+.handle {
+  position: relative;
+  width: 7px;
+  height: 50px;
+  border-radius: 5px;
+  background:  #1e1e8a;
+  left: -10px;
+  top: -215px;
+  transform: rotate(-30deg);
+}
+.handle::after {
+  content:'';
+  display: block;
+  width: 7px;
+  height: 25px;
+  border-radius: 5px;
+  background:  #1e1e8a;
+  transform: rotate(120deg) translate(-10px, 15px);
+}
+
